@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://02vd84b3f17s"]
+
+[ext_resource type="Script" path="res://Scripts/playerControls.gd" id="1_jdsou"]
+
+[node name="PlayerTriangle" type="CharacterBody2D"]
+up_direction = Vector2(0, 1)
+script = ExtResource("1_jdsou")
+
+[node name="CollisionTriangle" type="CollisionPolygon2D" parent="."]
+rotation = -6.28319
+polygon = PackedVector2Array(-20.5, 11.836, 0, -23.671, 20.5, 11.836)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-20.5, 11.836, 0, -23.671, 20.5, 11.836)

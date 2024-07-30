@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cg2783pxwlyds"]
+
+[ext_resource type="PackedScene" uid="uid://02vd84b3f17s" path="res://Scenes/player_triangle.tscn" id="1_33me5"]
+
+[node name="TestGameWorld" type="Node2D"]
+
+[node name="PlayerTriangle" parent="." instance=ExtResource("1_33me5")]
+position = Vector2(138, 39)
+
+[node name="Camera2D2" type="Camera2D" parent="."]
+position = Vector2(138, 39)
